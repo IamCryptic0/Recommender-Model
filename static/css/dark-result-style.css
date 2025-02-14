@@ -1,0 +1,74 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #1f1c2c, #535353);
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    background-color: #2b2b2b;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+    color: #e0e0e0;
+}
+
+/* Heading */
+h1 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* Result Message */
+.result-message {
+    font-size: 1.2em;
+    color: #d4d4d4;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Back Link Styling */
+.back-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effects for Back Link */
+.back-link:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .result-message {
+        font-size: 1em;
+    }
+
+    .back-link {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}

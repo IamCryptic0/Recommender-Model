@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Merriweather', 'Bookman Old Style', serif;
+    background: linear-gradient(to bottom, #121212, #1e1e1e 50%, #2b2b2b);
+    margin: 0;
+    padding: 0;
+    color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    width: 95%;
+    max-width: 650px;
+    margin: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #ffcc80;
+    margin-bottom: 25px;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #c7c7c7;
+    font-size: 1rem;
+}
+
+/* Input fields for continuous data */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #444;
+    background-color: #292929;
+    color: #eaeaea;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Remove double arrows in Chrome, Safari */
+    margin: 0;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: #ffcc80;
+    box-shadow: 0 0 8px rgba(255, 204, 128, 0.8);
+}
+
+/* Dropdown (Select) Styling */
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #444;
+    background-color: #292929;
+    color: rgba(234, 234, 234, 0.6); /* Placeholder opacity reduced */
+    border-radius: 8px;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23eaeaea" d="M2 0L0 2h4z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:focus {
+    outline: none;
+    border-color: #ffcc80;
+    box-shadow: 0 0 8px rgba(255, 204, 128, 0.8);
+}
+
+select option {
+    color: #eaeaea;
+    background-color: #292929;
+}
+
+button.submit-btn {
+    background-color: #ffcc80;
+    color: #1e1e1e;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button.submit-btn:hover {
+    background-color: #e6b876;
+    transform: scale(1.02);
+}
+
+a {
+    color: #ffcc80;
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e6b876;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.7em;
+    }
+}
