@@ -45,8 +45,7 @@ Installation
 -------------------------------------------------------------
 1. Clone the Repository using:
     ``` 
-        git clone https://github.com/AbdulHaq1503/CustomerCreditCardTypePrediction_ML
-        cd credit-card-upgrade-prediction
+        git clone https://github.com/IamCryptic0/Recommender-Model.git
     ```
 2. Install python version mentioned in the python_version document
 3. Install the required dependencies:  
